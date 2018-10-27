@@ -1,0 +1,281 @@
+
+
+    body{
+
+        background-color:#f5f5f5;
+        color: #464547;
+        font-family: "Roboto";
+
+    h1{
+    font-size: 36pt;
+    font-family: "Roboto";
+    }
+
+
+     h2{
+       font-size: 20pt;
+       font-family: "Roboto";
+     }
+
+        p{
+            font-size: 16pt;
+            font-family: "Verdana";
+        }
+
+    }
+    
+    body,html {
+        padding: 0pt;
+        margin: 0pt;
+      }
+
+ .fas.fa-suitcase-rolling{
+     color: #464547;
+ }  
+
+
+
+    a:link { 
+        color:#464547;
+    }
+
+    a:hover { 
+        color: #464547;
+    }
+    
+    a:visited { 
+        color: #464547;
+    }
+
+    a:active { 
+        color: #dedede;
+    }
+
+
+footer{
+background-color: #464547;
+font-family: "Verdana";
+font-size: 10pt;
+color: white;
+}
+
+
+
+
+
+    .wrapper {
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-column-gap: 5px;
+        background-color: white;
+      }
+      
+
+    .wrapper .icon {
+      display: none;
+  }
+
+
+
+      .item {
+        background-color:white;
+        border: 1px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        font-family: "Lato";
+        color: #464547;
+        min-height: 35px;
+        padding: 5%;
+      }
+
+
+
+
+
+
+      @media only screen and (max-width: 600px) {
+
+        .wrapper .item{
+          display: none;
+      }
+
+        .wrapper a:not(:first-child) {display: none;}
+        .wrapper a.icon {
+          float: right;
+          display: block;
+        }
+      }
+
+
+@media only screen and (max-width: 600px) {
+  .wrapper.responsive {position: relative;}
+  .wrapper.responsive a.icon {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+
+  }
+  .wrapper.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+
+
+      .wrapper01 {
+        display: grid; 
+        grid-column-gap: 20px;
+      }
+      
+      .item01 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #464547;
+        min-height: 30px;
+        padding: 3%;
+      }
+
+      .item02 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #464547;
+        min-height: 30px;
+        padding: 0pt;
+        padding-bottom: 80px;
+      }
+
+
+      .item03 {
+        background-color:#464547;
+        border: 1px solid #464547;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100px;
+        padding: 20pt;
+      }
+
+
+ 
+      .travel-map {
+
+        object-fit: contain;
+        width: 70%;
+        height: auto;
+      }
+
+
+      .wrapper02 {
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-column-gap: 0;
+        background-color: #f5f5f5;
+      }
+
+
+      .photo-type {
+        object-fit: contain;
+        width: 100%;
+        height: auto;
+      }
+
+
+
+
+
+
+
+
+      .side {
+        object-fit: contain;
+        width:250px;
+        height:250px
+      }
+
+      .content {
+        grid-area: content;
+      }
+
+
+     
+   
+
+
+      .wrapper03 {
+        display: grid; 
+        grid-template-columns: 1fr 2fr;
+        grid-column-gap:0px;
+        grid-template-areas: 
+        "content   sidebar";
+        background-color: #f5f5f5;
+      }
+
+
+
+
+
+
+
+
+      .item04 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 30pt;
+        min-height: 100px;
+        padding: 0pt;
+        padding-bottom: 80px;
+      }
+
+      .wrapper04 {
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-column-gap: 5px;
+      }
+
+
+      #contact_background { 
+        background: url("../image/contact_background_photo.jpg") no-repeat center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+ 
+
+
+
+    @media only screen and (max-width: 720px) {
+        .wrapper03 {
+          display: grid; 
+          grid-template-columns: 1fr;
+          grid-column-gap:0px;
+          grid-template-areas: 
+          "sidebar"
+          "content";
+
+     }
+
+
+
+     @media only screen and (orientation: landscape){
+
+      .wrapper03 {
+        display: grid; 
+        grid-template-columns: 1fr 2fr;
+        grid-column-gap:0px;
+        grid-template-areas: 
+        "content   sidebar";
+        background-color: #f5f5f5;
+      }
+
+     }
+
